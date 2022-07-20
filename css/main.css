@@ -1,0 +1,148 @@
+/* ================
+  Google Fonts  
+ =============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ========================
+  Common Style or Utilities 
+ ======================= */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: #161616;
+  width: 1321px;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+/* ===========================
+  Top Banner Section Styles 
+ ========================== */
+
+.topBanner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-row-gap: 30px;
+  align-items: center;
+  
+}
+.bannerText {
+  color: #ffffff;
+  padding: 111px 24px 111px 106px;
+}
+.bannerText h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 80px;
+}
+.bannerText p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.bannerImage img{
+  width: 581px;
+  height: 613px;
+  padding: 33px 79px 0px 24px;
+}
+.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #DD0000;
+  padding: 16px 25px;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #DD0000;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #DD0000;
+  transition: 0.5s ease-out;
+}
+
+/* Top Banner Mobile Devices */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .topBanner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bannerText {
+    padding: 28px 38px;
+  }
+  .topBanner h1 {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .topBanner p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .hidden{
+    display: none;
+  }
+  .btn {
+    padding: 8px 12px;
+    font-size: 20px;
+    margin-left: 22%;
+  }
+  .bannerImage{
+    width: 100%;
+  } 
+  .bannerImage img {
+    width: 233px;
+    height: 245px;
+    margin-left: 22%;
+  }
+}
+
+/* Top Banner Tablet Devices */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 734px;
+    border-radius: 30px;
+  }
+  .topBanner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bannerText {
+    padding: 61px 2px 61px 76px;
+  }
+  .bannerText h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .bannerText p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .hidden{
+    display: none;
+  }
+  .btn{
+    padding: 12px 20px;
+    font-size: 20px;
+  }
+  .bannerImage{
+    width: 100%;
+  }
+  .bannerImage img {
+    width: 323px;
+    height: 340px;
+    padding: 58px 17px 0px 2px;
+  }
+}
